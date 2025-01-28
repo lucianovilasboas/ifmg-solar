@@ -25,7 +25,7 @@ trees_last = grouped_data['trees'].iloc[-1]  # Último valor de Árvores
 
 # Título da página
 st.title('📊 Dados de Geração de Energia')
-st.markdown('⚡ Dados de geração de energia no IFMG Campus Ponte Nova')
+st.markdown('⚡ Acompanhe em tempo real a geração de energia da usina solar 🌞 no IFMG Campus Ponte Nova.' ) 
 
 # Exibir o valor total acumulado em MWh com destaque
 st.markdown(
