@@ -5,9 +5,10 @@ selenium
 webdriver-manager
 selenium-wire
 watchdog
+plotly
+streamlit
 
 # notebook
-# streamlit
 # plotly
 
 # mysqlclient
