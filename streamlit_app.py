@@ -44,6 +44,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown('---')
+
 # Primeira figura: Gráfico de barras por date e today
 st.header('📅 Geração de energia por dia')
 fig_bar = px.bar(
@@ -77,10 +79,13 @@ fig_bar.update_layout(
 
 st.plotly_chart(fig_bar)
 
-# Exibir os últimos valores de CO2 e Árvores com fundo customizado
-st.header('🌍 Últimos valores: CO2 e Árvores')
 
-# Card para CO2
+st.markdown('---')
+
+# Exibir os últimos valores de CO₂ Compensado e Árvores com fundo customizado
+st.header('🌍 Últimos valores')
+
+# Card para CO₂ Compensado
 st.markdown(
     f"""
     <div style="
@@ -94,7 +99,7 @@ st.markdown(
         text-align: center;
         margin: 20px 0;
     ">
-        <h2 style="color: #000000; margin: 0;">☁️ CO2 Reduzido</h2>
+        <h2 style="color: #000000; margin: 0;">☁️ CO₂ Compensado</h2>
         <h1 style="color: #FF4500; margin: 0;">{co2_last:.2f} toneladas</h1>
     </div>
     """,
