@@ -94,7 +94,7 @@ st.markdown(
         margin: 20px 0;
     ">
         <h2 style="color: #000000; margin: 0;">☁️ CO2 Reduzido</h2>
-        <h1 style="color: #FF4500; margin: 0;">{co2_last:.2f} kg</h1>
+        <h1 style="color: #FF4500; margin: 0;">{co2_last:.2f} toneladas</h1>
     </div>
     """,
     unsafe_allow_html=True
