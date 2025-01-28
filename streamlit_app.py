@@ -4,7 +4,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Função para carregar os dados
-@st.cache_data
+# @st.cache_data
 def load_data():
     # Lê o arquivo CSV diretamente
     data = pd.read_csv('data.csv', sep=';', parse_dates=['date'])
