@@ -68,8 +68,8 @@ fig_bar.update_layout(
     title_font_size=24,  # Título maior
     xaxis_title_font_size=20,  # Título do eixo X maior
     yaxis_title_font_size=20,  # Título do eixo Y maior
-    xaxis_tickfont_size=16,  # Valores do eixo X maiores
-    yaxis_tickfont_size=16,  # Valores do eixo Y maiores
+    xaxis_tickfont_size=14,  # Valores do eixo X maiores
+    yaxis_tickfont_size=14,  # Valores do eixo Y maiores
     uniformtext_minsize=12,  # Tamanho mínimo do texto
     uniformtext_mode='hide',  # Esconde texto que não couber
     xaxis_tickformat='%d-%m-%Y'  # Formata o eixo X para exibir apenas a data
