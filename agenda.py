@@ -17,10 +17,10 @@ def executar():
         logger.error(f"Erro ao executar growatt_automacao.py: {e}")
 
 
-    # print("  Executando gitrun.py...")
-    # logger.info("Executando gitrun.py...")
-    # subprocess.run(["python", "gitrun.py", "-m", "Data update using git"], check=True)
-    # logger.info("Execução finalizada.")
+    print("  Executando gitrun.py...")
+    logger.info("Executando gitrun.py...")
+    subprocess.run(["python", "gitrun.py", "-m", "Data update using git"], check=True)
+    logger.info("Execução finalizada.")
 
     print("Finalizando execução da agenda.py")
 
@@ -28,7 +28,7 @@ def executar():
 if __name__ == "__main__":
     logger.info("Iniciando agendamento...")
     # agendamentos =  ["12:14", "12:15"]  # 
-    agendamentos =  ["17:00", "19:00" ,"22:00"] 
+    agendamentos =  ["08:00", "12:00", "16:00", "20:00"] 
     for i, a in enumerate(agendamentos):
         text = f"{i+1}° agendamento para {a}"
         print(text)
