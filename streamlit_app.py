@@ -71,7 +71,8 @@ fig_bar.update_layout(
     xaxis_tickfont_size=16,  # Valores do eixo X maiores
     yaxis_tickfont_size=16,  # Valores do eixo Y maiores
     uniformtext_minsize=12,  # Tamanho mínimo do texto
-    uniformtext_mode='hide'  # Esconde texto que não couber
+    uniformtext_mode='hide',  # Esconde texto que não couber
+    xaxis_tickformat='%d-%m-%Y'  # Formata o eixo X para exibir apenas a data
 )
 
 st.plotly_chart(fig_bar)
