@@ -1,0 +1,29 @@
+# Ignore Python files
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.pyi
+*.pyw
+*.pyz
+*.pyzw
+
+# Ignore Jupyter Notebook files
+.ipynb_checkpoints/
+
+# Ignore Python virtual environment files
+venv/
+
+
+# Ignore notebook.ipynb
+notebook.ipynb
+
+
+
+logs.log
+
+.streamlit/
+
+
+automacao.py
+growatt_automacao.py

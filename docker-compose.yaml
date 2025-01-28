@@ -1,0 +1,9 @@
+services:
+  growatt:
+    build: .
+    container_name: growatt-automation
+    ports:
+      - "5001:5000"
+    # restart: always
+    volumes:
+      - "./:/app"
