@@ -2,6 +2,12 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
+# from PIL import Image
+
+# img = Image.open("logo_ifmg_campus_pn.png")
+# # Redimensiona a imagem (largura, altura)
+# img_resized = img.resize((300, 100))
+
 
 # Função para carregar os dados
 # @st.cache_data
@@ -24,6 +30,9 @@ total_energy_mwh = data['total'].iloc[-1]  # Pega o último valor da coluna 'tot
 co2_last = grouped_data['co2'].iloc[-1]  # Último valor de CO2
 trees_last = grouped_data['trees'].iloc[-1]  # Último valor de Árvores
 
+
+
+# st.image(img_resized, use_container_width=False)
 # Título da página
 st.title('📊 Dados de Geração de Energia')
 st.markdown('⚡ Acompanhe em tempo real a geração de energia da usina solar 🌞 no IFMG Campus Ponte Nova.' ) 
@@ -34,7 +43,7 @@ st.markdown(
     <div style="
         background-color: #0E1117;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 20px;
         text-align: center;
         margin: 10px 0;
     ">
