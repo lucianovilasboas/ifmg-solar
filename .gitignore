@@ -14,11 +14,8 @@ __pycache__/
 # Ignore Python virtual environment files
 venv/
 
-
 # Ignore notebook.ipynb
 notebook.ipynb
-
-
 
 logs.log
 
