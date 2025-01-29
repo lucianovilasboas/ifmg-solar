@@ -9,7 +9,8 @@ def load_data():
     # Lê o arquivo CSV diretamente
     data = pd.read_csv('data.csv', sep=';', parse_dates=['date'])
     # Extrai apenas a data (sem a hora)
-    data['date_only'] = data['date'].dt.date
+    # data['date_only'] = data['date'].dt.date
+    data['date_only'] = data['date'].dt.strftime('%d-%m-%Y')
     return data
 
 # Carregar os dados
