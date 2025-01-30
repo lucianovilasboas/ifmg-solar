@@ -14,7 +14,7 @@ home = st.Page("streamlit_app.py", title="Home", icon=":material/dashboard:", de
 # pg.run()
 
 
-print(st.query_params)
+# print(st.query_params)
 
 # Adicionar uma lógica para verificar se a URL é diretamente acessada
 if "Admin" in st.query_params:
