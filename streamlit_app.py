@@ -22,6 +22,8 @@ def load_data():
 # Carregar os dados
 data = load_data()
 
+last_update = data['date'].iloc[-1].strftime('%d-%m-%Y às %H:%M:%S')
+
 # Agrupar os dados por dia e pegar o último valor do dia
 grouped_data = data.groupby('date_only').last().reset_index()
 
@@ -49,6 +51,7 @@ st.markdown(
     ">
         <h2 style="color: #FFFFFF; margin: 0;">📈 Total Gerado desde a implantação</h2>
         <h1 style="color: #00FF00; margin: 0;">{total_energy_mwh:.2f} MWh</h1>
+        <p style="color: #FFFFFF; margin: 0;">Última atualização em {last_update}</p>
     </div>
     """,
     unsafe_allow_html=True
